@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="LeashAndList Home Page">
+    <meta name="keywords" content="home page, index">
+    <meta name="author" content="p3190065">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <base href="../Exercise5/">
+
+    <link rel="shortcut icon" type="image/png" href="images/icon.jpg">
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <header>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <section class="header_links">
+                <a href="index.html">Home Page</a>
+                <a href="categories.html">Categories</a>
+                <a href="contact_us.html">Contact us</a>
+                <a href="about_us.html">About us</a>
+                <a href="register.html">Register</a>
+                <input type="text" id="searchbar" name="searchbar" placeholder="Search..">
+            </section>
+    </header>
+
+    <main class="index_grid">
+        
+            <!-- photo -->
+            <section class="slideshow_container">
+                <section class="slideshow">
+                    <img src="images/index/city.png" alt="city">
+                    <img src="images/index/car_keys.jpg" alt="car_keys">
+                    <img src="images/index/catering.png" alt="catering">
+                    <img src="images/index/clothes.png" alt="clothes">
+                    <img src="images/index/work_space.jpg" alt="work_space">
+                    <img src="images/index/yacht.webp" alt="yacht">
+                </section>
+            </section>
+            
+            
+            
+            <!-- <img src="images/index/city.png" alt="home_image" class="home_front_img"> -->
+
+            <!-- search bar  -->
+            <form class="search_form">
+
+                <label for="service">Service</label>   
+                <select id="service" name="service" >
+                    <option value="Athens">Rent</option>
+                    <option value="Thessaloniki">Buy</option>
+                </select>
+
+                <label for="country">Location</label>   
+                <select id="location" name="location" >
+                    <option value="Athens">Athens</option>
+                    <option value="Thessaloniki">Thessaloniki</option>
+                    <option value="Patra">Patra</option>
+                    <option value="Iraklion">Iraklion</option>
+                    <option value="Larisa">Larisa</option>
+                    <option value="Volos">Volos</option>
+                    <option value="Ioannina">Ioannina</option>
+                    <option value="Trikala">Trikala</option>
+                    <option value="Chalkida">Chalkida</option>
+                    <option value="Xanthi">Xanthi</option>
+                    <option value="Kalamata">Kalamata</option>
+                    <option value="Xania">Xania</option>
+                    <option value="Tripoli">Tripoli</option>
+                    <option value="Chios">Chios</option>
+                    <option value="Corfu">Corfu</option>
+                </select>
+                
+                
+                <!-- date from -->
+                <label for="date1">From </label>    
+                <input type="date" id="date1" name="trip-start" />
+
+                <!-- date until-->
+                <label for="date2">Until</label>    
+                <input type="date" id="date2" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+
+                <!-- price -->
+                <label for="price">Price Range</label>
+                <input type="range" id="price" name="volume" min="0" max="1000" />
+
+                <button>Submit</button>
+
+            </form>
+        
+
+        
+
+            <section class="main_intro">
+                <h2>Welcome to LeaseAndList</h2>
+            
+                <h3>Here you will find a diverse array of offerings available for both purchase and rent.</h3>
+            </section>
+
+            <!-- description -->
+            <section class="left_container">
+                <section class="intro_left">
+                    <h3>Kindly consider entering into cooperation with us for the following reasons:</h3>
+                    <ul>
+                        <li><span>Customer Trust:</span> Being listed on a reputable booking site can enhance your credibility and instill trust in potential customers.</li>
+                        <li><span>Cost-Effective Marketing:</span> Collaborating with a rental site can be a cost-effective way to market your rentals compared to traditional advertising methods.</li>
+                        <li><span>Feedback Loop:</span> Reviews and feedback from renters on rental sites can provide you with valuable insights .</li>
+                        <li><span>Marketing Support:</span> Many rental sites offer marketing and promotional opportunities, such as featured listings, advertising, and discounts.</li>
+                        <li><span>Booking Process:</span>Evaluate the booking process. A user-friendly and secure booking system contributes to a positive experience for both renters and property owners.</li>
+                    </ul>
+                </section>
+                <img src="images/index/hand_shaking.jpg">
+            </section>
+
+            <section class="right_container">
+                <img src="images/index/client_costumer.jpg">
+                <section class="intro_right">
+                    <h3>Consider selecting our services for the following reasons</h3>
+                    <ul>
+                        <li><span>Transparency:</span> We provide detailed information about 
+                            services or products, including pricing, terms, and conditions, so you can make well-informed choices.</li>
+                        <li><span>Ease of Booking:</span> The booking process is straightforward, 
+                            with clear instructions and user-friendly interfaces, making it easy for you to complete your reservation.</li>
+                        <li><span>Confirmation and Documentation:</span> After booking, 
+                            you receive email confirmations and documentation, which can be useful for reference and record-keeping.</li>
+                        <li><span>Flexibility:</span> Online booking platforms often allow you to easily modify or 
+                            cancel reservations, providing flexibility in your plans.</li>
+                        <li><span>Review and Rating System:</span> Booking sites often include review and 
+                            rating systems that can help showcase positive feedback from previous customers, further building trust in your business.</li>
+                    </ul>  
+                </section>
+            </section>
+       
+        
+        
+            <!-- products -->
+            <hr class="line">
+            <h1 class="view_offers">View our best offers</h1>
+
+            <section class="index_products">
+                <!-- Nissan Qashqai -->
+                <article class="product_list">
+                    <img src="images/cars/qashqai.jpg" alt="car">
+                    <h3>Nissan Qashqai</h3>
+                    <p>5 Seats, 3 Large bags, Manual, Unlimited mileage </p>
+                    <section class="list_details1">
+                        <p>UPC: 0asG5Sap3r</p>
+                        <p>Uploaded : <time datetime="2023-07-07"> 2023-07-07</time></p>
+                    </section>
+                    <section class="list_details_car">
+                        <p>Price : €36.15 for 3 days</p> 
+                        <button type="button">View deal</button>
+                    </section>
+                </article>
+
+                <!-- Nissan Juke -->
+                <article class="product_list">
+                    <img src="images/cars/juke.jpg" alt="car model">
+                    <h3>Nissan Juke</h3>
+                    <p>5 Seats, 1 Large bag, 1 Small bag, Manual, Unlimited mileage </p>
+                    <section class="list_details1">
+                        <p>UPC: eE9vWu1nig</p>
+                        <p>Uploaded : <time datetime="2023-10-20">2023-10-20</time></p>
+                    </section>
+                    <section class="list_details_car">
+                        <p>Price : €39.66 for 3 days</p>
+                        <button type="button">View deal</button>
+                    </section>
+                </article>
+
+                <!-- First appartment -->
+                <article class="product_list">
+                    <img src="images/homes/ap1.png" alt="appartment_img">
+                    <h3>Apartment 35 sq.m.</h3>
+                    <p>Appartment located in Athens, west of the Nursing Home</p>
+                    <section class="list_details1">
+                        <p>UPC: 0094998713</p>
+                        <p>Uploappartment ed : <time datetime="2023-07-07"> 2023-10-30</time></p>
+                    </section>
+                    <section class="list_details_home">
+                        <p>Price : 500 €</p> 
+                        <a href="product.html"><button type="button">View deal</button></a>
+                    </section>
+                </article>
+
+                <!-- Second appartment  -->
+                <article class="product_list">
+                    <img src="/exercise2/images/homes/ap2.jpg" alt="appartment_img">
+                    <h3>Apartment 94 sq.m.</h3>
+                    <p>Ground floor appartment, Agia Paraskevi, rental</p>
+                    <section class="list_details1">
+                        <p>UPC: 796214931</p>
+                        <p>Uploappartment ed : <time datetime="2023-10-20">2023-10-20</time></p>
+                    </section>
+                    <section class="list_details_home">
+                        <p>Price : €1300</p>
+                        <button type="button">View deal</button>
+                    </section>
+                </article>
+            </section>
+
+        
+        
+        
+                <!-- NEWS LETTER Subscribe to Our Newsletteror exclusive offers, discounts, announcements-->
+                <section class="newsletter">
+                    <h2> NEWS LETTER</h2>
+                    <p>Subscribe to our Newsletter or exclusive offers, discounts, announcements</p>
+                    <form class="news_form">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="text" placeholder="Email address" name="mail" required>
+                        <button>Subscribe</button>
+                    </form>
+                </section>
+        
+            
+    </main>
+    
+
+    <footer>
+        <section class="footer">
+            <!-- Contact -->
+            <section>
+                <h3>Contact information:</h3>
+                <p>Call: <a href="tel:+302101234567">+30 210-123-4567</a></p>
+                <p>E-mail: <a href="mailto:website@gmail.com">website@gmail.com</a></p>
+                <p>Location: <a href="https://www.aueb.gr/el/content/egkatastaseis">Location: 76 Patission Str., 104.34 ATHENS, GREECE</a></p>
+            </section>
+        
+            <!-- Social Media -->
+            <section class="media">
+                <h3>Follow us on social media:</h3>
+                <section class="media_link">
+                    <a href="https://www.facebook.com/"><img src="images/footer/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="images/footer/instagram.png" alt="instagram"></a>
+                    <a href="https://twitter.com/"><img src="images/footer/twitter.png" alt="twitter"></a>
+                </section>
+            </section>
+
+            <!-- Payment -->
+            <section>
+                <h3>Payment methods:</h3>
+                <img src="images/footer/maestro.png" alt="maestro card">
+                <img src="images/footer/mastercard.png" alt="maestro card">
+                <img src="images/footer/visa.png" alt="maestro card">
+            </section>
+        </section>
+        <h6 class="footer_credits">Designed and Developed by Olga ©</h6>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,1746 @@
+/*Import the font and name it*/
+
+@font-face {
+    font-family: 'Georgia';
+    src: url(Georgia-PersonalUse.ttf);
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Everything inside * applies to every page*/
+* {
+    /* position */
+   box-sizing: border-box; /* width and height include content, padding, border, not margin*/
+   margin: 0; /* no gap */
+   padding: 0; /* no gap */
+
+   /* text */
+   font-family: Georgia;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Body */
+
+/* Editing the background and text color of the body of every webpage*/
+body{
+    /* appearance */
+    background-color: #fff7f0;
+    /* text */
+    color: black;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Header */
+
+/*Editing the container of the header */
+header {
+    /* position */
+    position: fixed; /* header stays in the same place */
+    z-index: 1; /*covers all the elements */
+    top: 0px; /*the header doesnt change position when we use margin on
+                elements below it */
+
+    /* position */
+    padding: 3.2% 2%; /*create space around header */
+
+    /* appearance */
+    background-color: #2F3636;
+    
+    /* size */
+    width: 100%;
+    height: 5%; 
+    
+}
+
+/* Editing logo inside the header container */
+header img {
+
+    /* size */
+    width: 10.5%;
+
+    /* appearance */
+    border-radius: 10%; /*round img */
+
+    /* position */
+    float:left;/* img floats on the left of the header container */
+    margin-top: -2.5%; /*placing img inside header */
+    margin-left: -1%; /*placing img on the left */
+}
+
+
+/* Editing the links inside the header container */
+.header_links a {
+    /* text */
+    font-weight: 500; /* bolder text */
+    color: #fff7f0;
+    text-decoration: none; /* remove underline */
+    
+    /* transition */
+    transition: all 0.5s ease 0s;/* transition of color changing*/
+
+    /* position */
+    padding: 1.2%; /* adding space on the right */
+
+}
+
+/* placing links on the right of the header */
+.header_links{
+    /* position */
+    display: inline;
+    margin-left: 42%;
+}
+
+
+/*Editing the links inside the header container while we hover over them*/
+header a:hover {
+    /* text */
+    color:  #bdac14d6;
+    font-weight: 400; /* bolder text */
+    font-size: 1.2vw;
+}
+
+/* Editing the search bar of the header */
+header input[type=text] {
+
+    /* appearance */
+    border: 1px solid #bdac14d6;/* size,style,color */
+	outline: none; /*removing ouline */
+    border-radius: 5%; /*rounding img */
+
+    background-color: #fff7f0c1;
+
+    /* position */
+    padding: 0.2%; /*create space on top */
+    margin-right: 0%;/*add space on top */
+
+    /* text */
+    font-size: 1vw;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Footer */
+
+
+/* add backgroung color */
+footer{
+    background-color: #534e4e;
+}
+
+/* Edit the footer container */
+.footer{
+
+    /* size */
+    height: 33vh;
+
+    /* text */
+    color: #fff7f0;
+
+    /* position */
+    padding-top: 2.5%; /*create space on top of element*/
+
+    /* flex */
+    display: flex;
+
+    align-items: center; /* align items vartically */
+    justify-content: center;/* align items horizontally */
+    gap: 13%; /* add gap between items */
+}
+
+/* edit the credits on the right and below footer*/
+.footer_credits{
+    /* text */
+    font-size: 0.9em;
+    text-align: right;
+
+    /* position */
+    padding: 0.8%;
+}
+
+
+/* Editing the titles: Contact information, Or follow us on social media, Payment methods  */
+footer section h3{
+
+    /* text */
+    color: #fff7f0;
+    font-weight: bolder;
+
+    /* position */
+    margin-bottom: 5%; /*create space on top */
+    
+}
+
+/* Editing the links inside the footer  */
+footer section p a{
+    /* text */
+    color: #fff7f0;
+    text-decoration: none; /*removing the underline */
+}
+
+/* Changing the links when we hover over them */
+footer section p a:hover{
+    /* text */
+    text-decoration:underline;
+    color: #a8980d;
+}
+ 
+/* center links */
+.media_link {
+    /* position */
+    margin-left: 22%;
+} 
+
+/* Changing the icons height when we hover over them */
+.media a img:hover{
+    /* size */
+    height: 6vh;
+    margin-left: 2%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Index */
+
+/* hide the images that are not shown right now */
+.slideshow_container{
+    overflow: hidden;
+    
+}
+
+/* container of images */
+.slideshow{
+    /* flex */
+    display:flex;
+
+    /* animation */
+    animation: slide 25s infinite; /* 25s duration, infinite times */
+
+    /* size */
+    height: 100%;
+}
+
+/* images of slideshow */
+.slideshow img{
+    /* size */
+    width: 100vmax; 
+}
+
+/* image slideshow presentation */
+@keyframes slide{
+    0%{
+        transform: translateX(0%); /* start at 0px */
+    }
+    20%{
+        transform: translateX(-102%); /* add 1550px (size of image) */
+    }
+    40%{
+        transform: translateX(-203%);/* add 1550px (size of image) */
+    }
+    60%{
+        transform: translateX(-304%);/* add 1550px (size of image) */
+    }
+    80%{
+        transform: translateX(-405%);/* add 1550px (size of image) */
+    }
+    100%{
+        transform: translateX(-506%);/* add 1550px (size of image) */
+    }
+}
+
+
+
+/* Editing the searching form underneath the main image*/
+.search_form{
+
+    /* appearance */
+    background-color: #cecfcf;
+    border: 0.1vw solid #a8980d; /* size,style,color */
+
+    /* size */
+    width: 100%;
+    height: 6.2vh;
+
+    /* text */
+    text-align: center; /* center text vertically */
+
+    /* position */
+    padding: 0.55%;
+
+}
+
+/* Editing the container that includes the welcoming title and text underneath  */
+.main_intro{
+    /* text */
+    text-align: center;/* center text vertically */
+
+    /* position */
+    margin-top: 2%; /*create space on top */
+    margin-bottom: 5%; /*create space on bottom */ 
+}
+
+/* Editing the welcoming title  */
+.main_intro h2 {
+
+    /* text */
+    text-transform: uppercase; /* all capital */
+    font-size: 2.78em;
+    color: #a8980d;
+
+    /* position */
+    margin-bottom: 0.5%; /*create space on bottom */  
+}
+/* edit font size */
+.main_intro h3{
+    /* text */
+    font-size: 1em;
+}
+
+
+/* Editing everything the form contains: input, button except range*/
+.search_form select, .search_form input,.search_form button {
+
+    /* appearance */
+	border: none;
+	outline: none;
+	background: #ebe0dc;
+
+    /* position */
+	padding: 0.2%; /*create space around header */
+    margin-left: 1%; /*create space on the left */
+
+    /* text */
+	color: #000000;
+}
+
+/* Editing each label of the form */
+.search_form label{
+    /* text */
+    color: #2F3636;
+    font-weight: 900;  /* bolder text */
+
+    /* position */
+    margin-left: 1%; /*create space on the left */
+  }
+
+
+  /* Eding range from form */
+.search_form input[type="range"] {
+    /* appearance */
+    appearance: none; /* hide previous features */
+    opacity: 0.8; /* make range color trasparent */
+    outline: none;
+    background: #c7aeae;
+
+     /* size */
+    width: 10%;
+    height: 20%;
+    
+}
+
+/* Change range when hover*/
+.search_form input[type="range"]:hover {
+    /* appearance */
+    opacity: 1; /* remove transparency */
+    cursor: grab; /* change cursor */
+  }
+
+/* Edit the button of the form */
+.search_form button{
+    
+    /* position */
+    margin-left: 2%; /* create space on the left */
+    padding: 0.4%; /* create around button text */
+
+    /* appearance */
+    background-color: #ffffffd6;
+    border: none;
+    border-radius: 5%; 
+    box-shadow: rgba(2, 1, 1, 0.275)0 2vh 4vh 0;
+}
+
+/* Change the button when we hover */
+.search_form button:hover{
+    /* appearance */
+    background-color: #d6d6d6d6;
+    cursor: pointer; /* change cursor */
+}
+
+/* contains first text and image */
+.left_container{
+    /* flex */
+    display: flex;
+
+    /* position */
+    align-items: center;/* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap:7%;/* space between img and text*/
+}
+
+/* contains second text and image */
+.right_container{
+
+    /* position */
+    margin-top: 2%;
+    margin-bottom: 2%;
+    gap:7%;/* space between img and text*/
+
+    /* flex */
+    display: flex;
+    
+    align-items: center;/* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* space between containers */
+.intro_left, .intro_right{
+    /* size */
+    width:35%;
+    
+}
+
+/* Edit text */
+.intro_left span, .intro_right span{
+    /* text */
+    font-weight: 600;
+}
+
+/* Edit the list of the description */
+.intro_left li, .intro_right li{
+
+    /* appearance */
+    list-style: none; /* remove bullets from list */
+
+    /* position */
+    padding: 1%; /* add space between li*/
+}
+
+
+/* Edit description images */
+.left_container img, .right_container img {
+    /* size */
+    width:35%;
+
+    /* appearance */
+    border-radius: 5%;
+    border: 0.3vh solid #bdac14d6;
+}
+
+/* Edit line above title: View our best offers */
+.line{
+    /* appearance */
+    color: #a8980d;
+}
+
+/* Edit title: View our best offers */
+.view_offers{
+    /* text */
+    text-align: center; 
+    font-size: 2.8em;
+
+    /* position */
+    margin-top: 1%;
+    margin-bottom: 2%;
+
+    /* text */
+    color: #a8980d;
+}
+
+/* contains the 4 product cards */
+.index_products{
+    /* flex */
+    display:flex;
+
+    /* position */
+    align-items: center;/* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 5%; /*gap between items*/
+    margin-bottom: 5%;/*gap below flexbox*/
+
+}
+
+/* zoom in and add shadow on each card */
+.product_list:hover{
+    transform:scale(1.1);/*zoom in*/
+    box-shadow: 1vh 1vh #2f363643;
+
+}
+
+/* Edit newsletter container */
+.newsletter{
+    /* appearance */
+    background-color: #bdac14d6;
+    /* size */
+    height: 20vh;
+
+}
+
+
+/* Centering text inside newsletter */
+.newsletter p{
+    /* text */
+    text-align: center;
+}
+
+/* Centering NEWS LETTER inside newsletter */
+.newsletter h2{
+    /* position */
+    margin-bottom: 1%; /* add space below */
+    text-align: center; /* center text */
+
+    /* text */
+    text-decoration: underline; /* underline text */
+}
+
+/* Edit the name, email inputs */
+.newsletter input{
+    /* size */
+    width: 10%; /* size of input */
+    height: 5vh;
+
+    /* text */
+    font-size: 1vw;
+    color: #1d1c1c;
+
+    /* appearance */
+    outline: none; /* remove the outline of the input  */
+    background: transparent;
+
+    /* position */
+    margin: 0.5%;    
+}
+
+/* Edit the subscribe button */
+.newsletter button{
+    /* position */
+    margin-left: 1%; /* add space on the left*/
+    padding: 0.5%; /* add space inside the button */
+
+    /* appearance */
+    background-color: #ffffff72;
+    border: none;
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, .1) 0 2vh 4vh 0;
+
+}
+
+/* Change button when we hover  */
+.newsletter button:hover{
+    /* appearance */
+    background-color: #d6d6d6d6;
+    cursor: pointer; /* change cursor */
+}
+
+.news_form{
+    /* flex */
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* divide index into 3 rows */
+.index_grid{
+    /* grid */
+    display: grid;
+
+    /* 7 rows*/
+    grid-template-rows: 0.5fr 0.05fr 0.05fr 0.05fr 0.1fr 0fr 0.1fr ;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Products Categories */
+
+/* contains all the cards */
+.categories_container{
+    /* grid */
+    display:grid;
+
+    /* 4 col with 400px width */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    /* add gap between rows and columns */
+    grid-gap: 1%;
+
+    /* position */
+    margin-bottom: 5%;/* space from top */
+    padding: 5%; /* between cards */
+    margin-top: 5%;
+
+}
+
+
+/* edit category cards */
+.category-cards{
+    /* text */
+    font-size: 1.2em;
+
+    /* size */
+    width: 100%;
+
+    /* border */
+    border: 0.3vh groove  #bdac14d6;
+
+    /* position */
+    padding: 10%; /* add space inside card */
+    margin-top: 2%;
+
+    /* appearance */
+    background-image: linear-gradient(#efe39e30,white);
+
+}
+
+/* We edit the header of the container. We edit the text and add space below */
+.category-cards h2 {
+    /* text */
+    margin-top: 10%;
+    text-align: center;
+    font-weight: 200;
+    line-height: 1em;
+    font-size: 3em;
+    color: #a8980d;
+
+    /* position */
+    padding-bottom: 2%;
+    
+}
+
+/* We edit the images of the categories */
+.category-cards img {
+
+    /* size */
+    height: 35%;
+    width: 100%;
+
+    /* position */
+    margin-bottom: 5%;
+
+    /* appearance */
+    border: 0.3vh solid #a8980d;
+
+}
+
+
+/* We remove the bullets and add space below*/
+.category-cards li {
+
+    /* appearance */
+    list-style: none;
+
+    /* position */
+    padding-bottom: 5%;
+    text-align: center;
+  
+}
+
+/* We remove the underline from the links and change the color*/
+.category-cards li a{
+    /* text */
+    color: rgba(23, 74, 83, 0.6);
+    text-decoration: none;
+}
+
+/* We change the color of the text and add shadow once we hover over it */
+.category-cards li a:hover {
+    /* text */
+    color:#a8980d;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Home Rentals */ /* Car Rentals */
+
+
+/* contains all cards */
+.cat_container{
+    /* grid */
+    display:grid;
+
+    /* 4 col with 120px width */
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+
+    /* add gap between rows and columns */
+    gap:8%;
+    /* position */
+    margin-bottom: 10%;/* space from top */
+    padding: 5%;
+    margin-left: -4.5%;
+
+
+}
+
+/*Creating a container that includes the image and details of product  */
+.product_list{
+    /* appearance */
+    background-color:  rgba(255, 255, 255, 0.152);
+    border:0.3vh solid  #bdac14d6;
+
+    /* size */
+    width: 125%;
+    height:105%;
+
+}
+
+/* Title of every page */
+.sub_cat{
+    /* text */
+    color: #a8980d;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 10%;
+}
+
+.product_list h3, .product_list p, .list_details{
+    margin-left: 3%;
+}
+
+/*Changing the size of the image*/
+.product_list img{
+    /* size */
+    width: 100%;
+    height: 50%;
+    
+}
+
+/* Changing the text color of the title */
+.product_list h3{
+    /* text */
+    color: #2f3636c0;
+
+    /* position */
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+/* Changing the text color of the details */
+.product_list p{
+    /* text */
+    color: #2f3636c0;
+
+    /* position */
+    margin-bottom: 1%;
+}
+
+/*Adding space on the right */
+.list_details_car{
+    /* position */
+    margin-left: 65%;
+}
+
+/*Adding space on the left and top */
+.list_details_home{
+    /* position */
+    margin-left: 65%;
+    margin-top: 10%;
+}
+
+
+/*Changing the price */
+.list_details_car p, .list_details_home p{
+    /* text */
+    font-weight: bolder;
+}
+
+
+/*Changing the style of the botton*/
+.list_details_car button, .list_details_home button {
+    /* appearance */
+    background-color: #bdac14d6;
+    border: none;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+
+    /* text */
+    color: #fff;
+
+    /* position */
+    padding: 7% 18%;
+}
+
+/*Changing the style of the botton when we hover over it*/
+.list_details button:hover, .list_details_home button:hover {
+    /* appearance */
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    cursor: pointer;
+    background-color: #a8980d;
+}
+/*Adding space above and changing the text size*/
+.list_details1{
+    /* position */
+    margin-top: 2%;
+
+    /* text */
+    font-size: 0.8em;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Product */
+
+
+.product_grid{
+    /* grid */
+    display: grid;
+
+    /* 3 rows, first 710px, second 360, third 330 */
+    grid-template-rows: 1fr 0.2fr 0.5fr;
+
+
+}
+
+
+/* editing the first image of the product */
+.first_img{
+    /* position */
+    margin-top: 6.3%; /* add space from top */
+    
+
+    /* size */
+    width: 39.5%;
+    height:85%;
+}
+
+ 
+/* The contaner includes all the information that are placed right of the first image */
+.product_right{
+    /* position */
+    float: right;
+    
+}
+
+/* Edit the space around small desc, price and small desc */
+.product_info{
+    /* position */
+    margin-top: 15%;
+    margin-right: 10%;
+}
+
+/* Edit the small desc, price and small desc */
+.product_info p{
+    font-size: 2em;
+}
+
+/* Edit the link find similar products */
+.product_info p a{
+    /* text */
+    color: #cb6e1c;
+    text-decoration: none;
+    margin-right: 10%;
+}
+
+.product_info p a:hover{
+    /* text */
+    color: #ab5a13;
+}
+
+/* Message and Telephone buttons */
+.product_info_button{
+    /* position */
+    margin-top: 2%;
+}
+
+/* Edit the button of the form */
+.product_info_button a button{
+
+    /* position */
+    margin-left: 2%; /* add space on the left */
+    padding: 2%; /* add space inside button */
+
+    /* appearance */
+    background-color:white; 
+    border: 0.5vh solid  #a8990d2f; /* add border */
+    border-radius: 4%;  
+    box-shadow: rgba(255, 255, 255, 0.1) 0 2px 4px 0; /* add shadow */
+    cursor: pointer;
+}
+
+/* Change the botton when he hover over it */
+.product_info_button button:hover{
+    /* appearance */
+    background-color:#2f363639 /* change color */
+}
+
+/* Edit the description of the product, meaning the paragraph*/
+.product_desc{
+    /* position */
+    margin-top: 2%; /* add space on top */
+    /* text */
+    font-size:1.4em;
+    /* size */
+    width: 90vh;
+}
+
+/* Edit product date, visits, price history */
+.product_mod{
+    /* position */
+    margin-top: 1%; /* add space on top */
+}
+
+/* The container includes the tablr and form */
+.customer_product_container{
+    /* flex */
+    display: flex;
+    /* add psace between items */
+    justify-content: space-between;
+
+    /* add space above */
+    margin-left: 0.1%;
+    
+}
+
+/* Placing in center product date, visits, price history */
+.costumer_form h3{
+    /* text */
+    text-align: center;
+}
+
+/* Edit the price, small desc, ups and title  */
+.product_info h1{
+    /* text */
+    font-size: 2em;
+    /* position */
+    margin-bottom: 1%;
+}
+
+/* Edit costumer form container */
+.customer_form{
+    /* position */
+    padding: 0.9% 0.5%;
+
+    /* appearance */
+    cursor: pointer;
+    border:0.1vh solid #a8980d;
+    background-image: linear-gradient(#fffefe5f,#a8990d17);
+
+    /* text */
+    color: rgb(128, 128, 128);
+
+    /* size */
+    width: 40%;
+    
+    /* text */
+    text-align: center;
+
+}
+
+/* Editing costumer form inputs */
+.customer_form li input {
+
+    /* size */
+    width: 80%;
+
+    /* position */
+    padding: 2%;/* add space n between */
+    margin-bottom: 10%; /* add space below */
+     
+
+    /* text */
+    font-size: 1em;
+    color: #534e4e;
+    
+    /* appearance */
+    border: none;
+    border-bottom: 0.1vh solid #31303059;
+    outline: none;   
+    background-color: transparent; 
+}
+
+/* remove bullets */
+.customer_form ul{
+    /* appearance */
+    list-style-type: none;
+}
+
+/* Edit the submit input */
+.customer_form li input[type="submit"]{
+    /* appearance */
+    background-color:  #a8990d5f;
+    cursor: pointer;
+    border-bottom:none;
+    /* size */
+    width: 95%;
+}
+
+/* Editing the container of images*/
+.product_images{
+    /* flex */
+    display: flex;
+
+    /* position */
+    margin-top: 3%; /* add space above container  */
+    margin-bottom: 3%;/* add space below container  */
+
+    align-items: center;/* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Editing the images before the footer*/
+.product_images img{
+    /* size */
+    width:30%;
+    height:80%;
+
+    /* appearance */
+    border-radius: 3%;
+
+    /* position */
+    padding: 0.5%;
+}
+
+/* Edit the table*/
+.product_details{
+    /* table */
+    border-collapse: collapse; /* the cells inside are shared */
+    /* size */
+    width:58%;
+}
+
+/* Edit the lines and cells of table */
+.product_details  th, td {
+    /* appearance */
+    border: 0.1vh solid #a8980d;
+
+    /* postion */
+    padding: 1%;
+
+    /* text */
+    text-align: left;
+    border-collapse: collapse;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Contact Us */
+
+/* the container includes the form and all the contact information */
+.contact_us_container{
+    /* we display the items using flex in a row */
+    display: flex;
+
+    /* add gap between the items */
+    gap: 16%;
+
+    /* position */
+    margin-bottom: 10%;/*add space above container */
+    margin-top: 10%;/*add space below container */
+}
+
+/* Contains the form */
+.contact_form{
+
+    /* size */
+    width: 49.5%;
+
+    /* appearance */
+    background-image: linear-gradient(#efe39e30,rgba(205, 202, 202, 0.5));
+    box-shadow: 0 5vh 10vh rgba(0,0,0,.6);
+    
+}
+
+/* Title of form "Costumer Support" */
+.contact_form h3 {
+
+    /* text */
+    color: #534e4e;
+    font-size: 1.5em;
+    opacity: 0.6;
+    text-align: center;
+
+    /* position */
+    margin-top: 2%;
+  }
+
+  /* All the lines inside the form */
+  .contact_form input{
+
+    /* size */
+    width: 100%;
+
+    /* position */
+    padding: 3%; /* add space on right*/
+    margin-bottom: 2%; /* add space below*/
+
+    /* text */
+    font-size: 1em;
+    color: #534e4e;
+    
+    /* appearance */
+    border: none;/* removing border*/
+    border-bottom: 0.1vh solid #fff;/* adding the bottom line of border*/
+    outline: none;
+    background: transparent;
+   
+  }
+
+  /* Removing the dots from the inputs */
+  .contact_form li{
+    /* appearance */
+    list-style: none;
+  }
+
+  /* Modify the button browse */
+  .contact_form input[type="file"]::file-selector-button{
+    /* appearance */
+    border: 1px solid #ccc;
+    
+    /* position */
+    padding: 1% 1.5%;
+
+    /* appearance */
+    cursor: pointer;
+
+    /* text */
+    color: rgb(128, 128, 128);
+
+  }
+
+  /* Modify button submit inside form, using !important to override */
+  .form_button{
+    /* text */
+    color: #bdac14d6 !important; /* using important to override the changes of other inputs */
+    font-weight: 700;
+    
+  }
+
+  /* Modify  cursor*/
+  .form_button :hover {
+    /* appearance */
+    cursor: pointer;
+  }
+
+  /* Contains the information next to the form */
+ .contact_info{
+    /* position */
+    margin-top:10%; /* add space above */
+    margin-left: 4%;/* add space on the left */
+ }
+
+/* Contains the title CONTACT INFORMATION */
+ .contact_info h1 {
+
+    /* text */
+    color: #534e4e;
+    opacity: 0.8;
+    letter-spacing: 0.5em;
+
+    /* position */
+    margin-bottom: 8%;
+ }
+
+ /* Contains the lines above and below the text */
+ .contact_info hr{
+
+    /* position */
+    width : 100%;
+    margin-bottom: 8%;/* add space below the line*/
+    color: rgba(193, 187, 79, 0.4);
+ }
+
+  /* Editing the intro, phone number, program and location */
+ .contact_info p{
+
+    /* text */
+    font-size: large;
+    color: #534e4e;
+    
+    /* position */
+    width:50vh ;
+    padding: 15px;
+
+    /* text */
+    text-align: justify;
+    
+ }
+
+ /* Contains the text after the title */
+ .contact_intro{
+
+    /* position */
+    margin-bottom: 8%; /* add space below */
+
+    /* text */
+    letter-spacing: 0.4vh;
+    color: #534e4e;
+    opacity: 0.75;
+ }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* About Us */
+
+/* adding a container that includes bio and paragraph */
+.about_us_container{
+
+    /* we display the items using flex in a row */
+    display: flex;
+
+    /* we add gap between the items */
+    gap: 10%;
+}
+
+/* Editing the front image */
+ .front_img_contact_us{
+    /* size */
+    width: 100%;
+    height: 100%;
+    /* appearance */
+    opacity: 0.65; /*transparency*/
+ }
+
+.about_container{
+    position: relative;
+}
+
+ /* Editing the title "Who we are" */
+ .about_container h1{
+
+    /* position */
+    top:73%;  /* edit the title's height inside the container */
+    margin-left: 41%;/* edit the title's width inside the container */
+    position: absolute;
+
+    
+
+    /* text */
+    color:#534e4e ;
+    font-weight: 900;
+    font-size: 4vw;
+ }
+
+ /* add space bellow card and text */
+ .about_us_container{
+    /* position */
+    margin-bottom: 1%;
+    margin-top: 2%;
+ }
+
+ /* Container that includes title "About Us" and the paragraph below it*/
+.about_info{
+    /* size */
+    width : 45%;
+
+    /* position */
+    margin: 3%;/*add space above */
+    padding: 2%; /*add space around element */
+    
+    /* text */
+    text-align: justify;
+    font-size: 1.8vw;
+}
+
+/* Editing title "About us" */
+.about_info h4{
+    /* position */
+    margin-bottom: 3%;/*add space below */
+    /* text */
+    text-align: center;
+}
+
+/* Editing "Us" in "About us" */
+.title_us{
+    /* text */
+    color: #bdac14d6;
+    font-weight: 900;
+}
+
+/* Editing bio card */
+.bio{
+    /*appearance*/
+    background-color:  #cecfcfad;
+
+    /* size */
+    width : 55vh;
+    height: 75%;
+
+    /* position */
+    margin-top: 25%;/*add space above */
+    padding: 8%;/*add space around element */
+
+    /* border */
+    border-radius: 5%;
+    
+    /* text */
+    font-size: 1.2em;
+    text-align: justify;
+
+    /* border */
+    border: 2px solid #a8980d;
+}
+
+/* Editing image inside bio card */
+.bio img{
+    /* position */
+    position: relative;/* positioned relative to it's original position */
+    top:-20%;/* edit the image's height inside the container */
+    left: 25%;/* edit the image's width inside the container */
+}
+
+/* Editing the name inside bio card */
+.bio h4{
+    /* text */
+    text-align: center;
+    font-weight: bolder;
+
+    /* position */
+    position: relative;/* positioned relative to it's original position */
+    top: -5%;
+}
+
+/* Editing the profession inside bio card */
+.bio h5{
+    /* text */
+    text-align: center;
+    font-weight: bold;
+
+    /* position */
+    position: relative;/* positioned relative to it's original position */
+    top: -15%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*Register */
+
+/* contains the form */
+.registration_form{
+    /* position */
+   padding: 1%;
+   margin-top: 8%;
+   margin-left: 3%;
+   margin-right: 3%;
+   margin-bottom: 2%;
+
+   /* appearance */
+   background-image: linear-gradient(rgba(240, 236, 205, 0.288), #ffffff72);
+   box-shadow: 0.5em 0em 0.5em 0.5em rgba(0, 0, 0, 0.155);
+}
+
+/* add color and space between fieldset and questions */
+fieldset{
+    /* appearance */
+    border: 1px solid rgba(0, 0, 0, 0.203);
+
+    /* position */
+    padding: 0.5%;
+}
+
+/* edit from's inputs */
+fieldset input{
+    /* position */
+    margin: 0.8%;
+    /* appearance */
+    background-color:transparent;
+}
+
+/* edit the height of all inputs except from checkboxes*/
+fieldset input[type="text"],input[type="password"],input[type="tel"],input[type="date"],input[type="email"] {
+    height: 2.2em;
+}
+
+/* edit the dates width */
+fieldset input[type="date"]{
+    width: 10.5%;
+}
+
+/* adding space */
+.personal_info label{
+    /* block */
+    display: inline-block;
+    /* size */
+    width: calc(20%); /* it will take up 20% of the width  */
+}
+
+/* add space from every question */
+.questionare summary{
+    margin-top: 0.8%;
+}
+
+/* edit button */
+.registration_form button{
+    /* appearance */
+    padding: 0.2%;
+    background-color: transparent;
+
+    /* position */
+    margin-left: 1%;
+    
+
+}
+/* edit button's color when we hover */
+.registration_form button:hover{
+    background-color: #a8990d56;
+
+}
+
+
+
+
+/* Tablet Screen */
+@media screen and (max-width: 760px) and (min-width: 321px) {
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Header */
+
+header{
+    padding: 5%;
+}
+
+/* Editing the links inside the header container */
+.header_links a {
+
+    /* position */
+    padding: 0.5%; /* adding space on the right */
+
+}
+
+/* placing links on the right of the header */
+.header_links{
+    /* position */
+    margin-left: 12%;
+}
+
+/*Editing the links inside the header container while we hover over them*/
+header a:hover {
+    /* text */
+    font-size: 2vw;
+}
+
+/* Editing the search bar of the header */
+header input[type=text] {
+
+    /* position */
+    padding: 0.2%; /*create space on top */
+
+    /* text */
+    font-size: 1.5vw;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Footer */
+
+/* Edit the footer container */
+.footer{
+
+    /* position */
+    padding-top: 2.5%; /*create space on top of element*/
+    gap: 13%; /* add gap between items */
+}
+
+
+.media_link{
+    margin-left: -15%;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Index */
+
+
+/* image slideshow presentation */
+@keyframes slide{
+    0%{
+        transform: translateX(0%); /* start at 0px */
+    }
+    20%{
+        transform: translateX(-100%); /* add 1550px (size of image) */
+    }
+    40%{
+        transform: translateX(-200%);/* add 1550px (size of image) */
+    }
+    60%{
+        transform: translateX(-300%);/* add 1550px (size of image) */
+    }
+    80%{
+        transform: translateX(-400%);/* add 1550px (size of image) */
+    }
+    100%{
+        transform: translateX(-500%);/* add 1550px (size of image) */
+    }
+}
+
+/* Editing the searching form underneath the main image*/
+.search_form{
+    /* size */
+    width: 100%;
+    height: 10vh;
+    padding: 7%;
+    margin-top: -4%;
+}
+
+.search_form button{
+    font-size: 0.7em;
+    width: 10%;
+}
+
+
+/* Editing the welcoming title  */
+.main_intro h2 {
+    /* text */
+    font-size: 2em;
+
+}
+
+/* edit font size */
+.main_intro h3{
+    /* text */
+    font-size: 0.8em;
+}
+
+
+/* space between containers */
+.intro_left, .intro_right{
+    /* size */
+    width:50%;
+    
+}
+
+/* Edit description images */
+.left_container img, .right_container img {
+    /* size */
+    height:55%;
+}
+
+.view_offers{
+    /* text */
+    font-size: 2em;
+
+    /* position */
+    margin-bottom: 4%;
+}
+
+/* contains the 4 product cards */
+.index_products{
+    gap: 2%; /*gap between items*/
+
+}
+
+
+/* Edit the name, email inputs */
+.newsletter input{
+    font-size: 0.7em;   
+}
+.newsletter button{
+    /* position */
+    padding: 1%; /* add space inside the button */
+
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Products Categories */
+
+
+/* contains all the cards */
+.categories_container{
+    margin-bottom: 75%;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Home Rentals */ /* Car Rentals */
+
+.product_list{
+    height:90vh;
+}
+
+/*Adding space on the right */
+.list_details_car{
+    /* position */
+    margin-left: 65%;
+}
+/*Adding space on the left and top */
+.list_details_home{
+    /* position */
+    margin-top: 10%;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Product */
+
+/* editing the first image of the product */
+.first_img{
+    
+    /* size */
+    width: 100%;
+    height:55%;
+}
+
+.product_right{
+    margin-bottom: 75%;
+}
+
+/* Edit the space around small desc, price and small desc */
+.product_info{
+    /* position */
+    margin-top: 15%;
+    margin-right: 10%;
+}
+
+/* Edit the small desc, price and small desc */
+.product_info p{
+    font-size: 2em;
+}
+
+/* Edit the link find similar products */
+.product_info p a{
+    /* text */
+    margin-right: 10%;
+}
+
+/* Message and Telephone buttons */
+.product_info_button{
+    /* position */
+    margin-top: 2%;
+}
+
+/* Edit the button of the form */
+.product_info_button a button{
+
+    /* position */
+    margin-left: 2%; /* add space on the left */
+    padding: 2%; /* add space inside button */
+
+    /* appearance */
+    border: 0.5vh solid  #a8990d2f; /* add border */
+}
+
+/* Edit the description of the product, meaning the paragraph*/
+.product_desc{
+    /* position */
+    margin-top: 2%; /* add space on top */
+    /* text */
+    font-size:1.4em;
+    /* size */
+    width: 90vh;
+}
+/* Edit product date, visits, price history */
+.product_mod{
+    /* position */
+    margin-top: 1%; /* add space on top */
+}
+/* The container includes the tablr and form */
+.customer_product_container{
+
+    /* add space above */
+    margin-left: 0.1%;
+    
+}
+/* Edit the price, small desc, ups and title  */
+.product_info h1{
+    /* text */
+    font-size: 2em;
+    /* position */
+    margin-bottom: 1%;
+}
+/* Edit costumer form container */
+.customer_form{
+    /* position */
+    padding: 0.9% 0.5%;
+
+    /* size */
+    width: 40%;
+
+}
+
+/* Editing costumer form inputs */
+.customer_form li input {
+
+    /* size */
+    width: 80%;
+
+    /* position */
+    padding: 2%;/* add space n between */
+    margin-bottom: 10%; /* add space below */
+     
+
+    /* text */
+    font-size: 1em;
+    
+}
+/* Edit the submit input */
+.customer_form li input[type="submit"]{
+    
+    /* size */
+    width: 95%;
+}
+/* Editing the container of images*/
+.product_images{
+    /* position */
+    margin-top: 3%; /* add space above container  */
+    margin-bottom: 3%;/* add space below container  */
+}
+
+/* Editing the images before the footer*/
+.product_images img{
+    /* size */
+    width:30%;
+    height:80%;
+
+    /* position */
+    padding: 0.5%;
+}
+/* Edit the table*/
+.product_details{
+    /* table */
+    border-collapse: collapse; /* the cells inside are shared */
+    /* size */
+    width:58%;
+}
+/* Edit the lines and cells of table */
+.product_details  th, td {
+    /* appearance */
+    border: 0.1vh solid #a8980d;
+
+    /* postion */
+    padding: 1%;
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* About Us */
+
+.about_us_container{
+    gap: 3%;
+
+    width: 100%;
+}
+
+
+ /* Container that includes title "About Us" and the paragraph below it*/
+ .about_info{
+    /* size */
+    width : 400%;
+    height: 90%;
+
+    /* position */
+    margin: 3%;/*add space above */
+    padding: 2%; /*add space around element */
+    
+    /* text */
+    font-size: 3vw;
+}
+
+
+/* Editing bio card */
+.bio{
+
+    /* size */
+    width : 90%;
+    height: 105vh;
+
+    /* text */
+    font-size: 1.2em;
+
+}
+
+/* Editing image inside bio card */
+.bio img{
+    
+    left: 15%;/* edit the image's width inside the container */
+}
+
+
+}
+
+
